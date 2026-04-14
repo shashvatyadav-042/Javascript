@@ -1,0 +1,7 @@
+Logic and Complexity
+Q1: Digit GatekeeperApproach: I used a for loop to check every integer from $L$ to $R-1$. For each number, I check if it's divisible by $K$, ensure it has no zeros, and calculate the sum of digits to verify if it's a prime number.Complexity: O((R-L)/K × log(R) × √(sum of digits))
+Q2: Roll-Seed LockApproach: The code runs a loop 3 times. In each step, it applies the transformation logic: current / 2 + seed for even numbers and current * 3 + seed for odd numbers. Finally, it checks if the result is between 100-999 and if the middle digit matches the seed.Complexity: O(1)
+Q3: Mirror CorridorApproach: I iterate through $X$ from 0 to 10000. For each X, I check if (N+X) is both a palindrome (by reversing the string) and divisible by K. If no X is found within the limit, it returns -1.Complexity: O(log(N+X))
+Q4: Fare CalculatorApproach: This script calculates the base fare and then applies modifiers sequentially: extra charge for being late, a 10% distance surcharge, and the seed-based adjustment. The final value is rounded up to the nearest 5 using Math.ceil.Complexity: O(1)
+Q5: Skipping NumbersApproach: A while loop keeps running as long as the sum is less than N. Inside, it increments m and adds it to the total only if m is not a multiple of (seed+2).Complexity: O(N).
+Q6: Contest Score JudgeApproach: Calculates the score using the formula 3a + b - 2c. It then adjusts for negative values and the "total questions" penalty before determining the PASS/FAIL status.Complexity: O(1).
